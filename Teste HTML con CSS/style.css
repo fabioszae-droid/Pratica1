@@ -1,0 +1,9 @@
+body { background-color: lightblue;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+li:first-of-type + li {
+  font-style: italic;
+  color: orange;
+}
