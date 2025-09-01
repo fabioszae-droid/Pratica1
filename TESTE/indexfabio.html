@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" href="./1b21d656e9021f64af21748be32850bd.ico/favicon-16x16.png" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fabio Souza</title>
+  
+
+  <style>
+    :root {
+      --bg: #ffeb99;
+      --btn: #d1b3ff;
+      --btn-hover: #c299ff;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background-color: var(--bg);
+      font-family: Arial, Helvetica, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 20px;
+    }
+    .wrap {
+      width: 100%;
+      max-width: 600px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      text-align: center;
+    }
+    .avatar {
+      width: 500px;
+      height: 500px;
+      border-radius: 20px;
+      object-fit: cover;
+    }
+    h1 {
+      margin: 10px 0;
+      font-size: clamp(28px, 5vw, 44px);
+      
+    }
+
+    .actions {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      width: 100%;
+      max-width: 300px;
+    }
+    .btn {
+      display: inline-block;
+      width: 100%;
+      padding: 14px 18px;
+      border: 2px solid #000;
+      border-radius: 14px;
+      background: var(--btn);
+      color: #000;
+      font-size: 20px;
+      font-weight: 700;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background .15s ease-in-out, transform .05s ease-in-out;
+    }
+    .btn:hover {
+      background: var(--btn-hover);
+    }
+    .btn:active {
+      transform: translateY(1px);
+    }
+    .form-container {
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 500px;
+      margin-top: 20px;
+    }
+    .form-container h2 {
+      margin-bottom: 15px;
+      text-align: center;
+    }
+    .form-container input,
+    .form-container textarea,
+    .form-container button {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+    .form-container button {
+      background: #4caf50;
+      color: #fff;
+      font-weight: bold;
+      cursor: pointer;
+      border: none;
+    }
+    .form-container button:hover {
+      background: #45a049;
+    }
+    .footer {
+      margin-top: 30px;
+      text-align: center;
+      opacity: .6;
+      font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap" aria-label="Cartão de contato de Fabio Souza">
+    <img class="avatar" src="/imagem/foto social.jpeg" alt="Foto de perfil de Fabio Souza" onClick="alert('ELE É MUITO GATO!!!')">
+    <h1>Fabio Souza</h1>
+    <p>Profissional com mais de 20 anos de experiência no setor gastronômico e empresarial, tendo atuado em diversos países e liderado projetos de grande impacto. Fundador da Fase Foods e da rede de hamburguerias Ruar Street Burger, Fabio já comandou cozinhas premiadas, coordenou a área de alimentos e bebidas de grandes festivais internacionais como Rock in Rio e Lollapalooza, além de ter sido chef global da Honda Racing Team – HRC no MotoGP.
+
+Reconhecido por sua visão estratégica, capacidade de liderança e paixão por inovação, Fabio construiu sua carreira unindo criatividade, gestão eficiente e foco em resultados. Atualmente, segue à frente de novos projetos, conectando sua experiência em gastronomia, franquias e negociações internacionais ao seu espírito empreendedor.
+
+Além do universo empresarial, Fabio cultiva sua paixão por corridas de carro, unindo a disciplina das pistas à determinação nos negócios.</p>
+<h2>CENAS FORTE</h2>
+<details>
+  <summary>CLICK SE FOR LOUCO</summary>
+  <h2>Antes eu era o louco desse video</h2>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/FJhj9RpmGcY?si=eqkATy00vuK9hEvo" 
+title="YouTube video player" frameborder="0" 
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+</iframe>
+</details>
+
+    <div class="actions">
+      <a class="btn" href="https://wa.me/34627579570" target="_blank" rel="noopener">Contato</a>
+      <a class="btn" href="https://www.linkedin.com/in/fabio-souza-2978a032/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+
+    <!-- Formulário logo após o LinkedIn -->
+    <div class="form-container">
+      <h2>Enviar Email</h2>
+      <form action="enviar.php" method="POST">
+        <input type="text" name="nome" placeholder="Seu nome" required>
+        <input type="email" name="email" placeholder="Seu email" required>
+        <textarea name="mensagem" rows="5" placeholder="Sua mensagem" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  
+    <div class="footer">© Fabio Souza</div>
+  </main>
+</body>
+</html>

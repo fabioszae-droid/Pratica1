@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aplicación tipo Pinterest para practicar estructura HTML semántica.">
+  <meta name="keywords" content="Pinterest, práctica, HTML, imágenes, diseño web">
+  <meta name="author" content="Tu Nombre">
+  <link rel="canonical" href="https://www.ejemplo.com/practica-pinterest">
+  <title>Pinterest Fabio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #30078f;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+    nav {
+      background: #f4f4f4;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+    main {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 15px;
+      padding: 20px;
+    }
+    article {
+      background: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    article img {
+      width: 100%;
+      display: block;
+    }
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Cabecera -->
+  <header>
+    <h1>Pinterest Fabio</h1>
+  </header>
+
+  <!-- Navegador -->
+  <nav>
+    <a href="#">Inicio</a>
+    <a href="#">Explorar</a>
+    <a href="#">Perfil</a>
+  </nav>
+
+  <!-- Contenido principal -->
+  <main>
+    <section>
+      <article>
+        <img src="https://www.freepik.com/free-vector/flat-international-day-tolerance-illustration_35105813.htm#fromView=popular&page=1&position=7&uuid=4e03ad64-5a80-44a7-8efb-c8048cf9c249" alt="Imagen de ejemplo 1" loading="lazy">
+        <p>Descripción de la imagen 1</p>
+      </article>
+    </section>
+
+    <section>
+      <article>
+        <img src="https://es.pinterest.com/pin/657455245571789867/" alt="Imagen de ejemplo 2" loading="lazy">
+        <p>Descripción de la imagen 2</p>
+      </article>
+    </section>
+
+    <section>
+      <article>
+        <img src="https://es.pinterest.com/pin/9851692918552922/" alt="Imagen de ejemplo 3" loading="lazy">
+        <p>Descripción de la imagen 3</p>
+      </article>
+    </section>
+  </main>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>&copy; 2025 Pinterest Fabio - Todos los derechos reservados</p>
+  </footer>
+
+</body>
+</html>
